@@ -11,5 +11,7 @@ def query_index(query):
     query_engine = index.as_query_engine()
     response = query_engine.query(query)
     print(response)
+    print(response.get_formatted_sources())
 
-query_index("What is llma")
+question = input("Ask me something:")
+query_index(question)
