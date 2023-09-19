@@ -2,6 +2,7 @@
 
 from llama_index import VectorStoreIndex, SimpleDirectoryReader, StorageContext, load_index_from_storage
 import os
+from langchain.chat_models import ChatOpenAI
 
 #For powershell env variable setup
 #$env:OPENAI_API_KEY = "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" 
